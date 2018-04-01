@@ -1,0 +1,16 @@
+<import src="../components/nav.wxml" />
+<template is="nav" data="{{navclass}}"></template>
+
+<view class="tab-content">
+    <!-- 推荐列表 -->
+    <import src="../components/tuijian.wxml" />
+    <template is="tuijian" data="{{cacheObj, navclass, ctrollObj}}"></template>
+
+    <!-- 排行榜列表 -->
+    <import src="../components/paihang.wxml" />
+    <template is="paihang" data="{{cacheObj, navclass}}"></template>
+
+    <!-- 搜索页 -->
+    <import src="../components/sousuo.wxml" />
+    <template is="sousuo" data="{{cacheObj, navclass, clickTabName}}"></template>
+</view>

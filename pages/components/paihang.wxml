@@ -1,0 +1,20 @@
+<template name="paihang">
+    <view wx:if="{{navclass.paihang.length}}">
+        <view class="paihang-list">
+            <view class="paihang-list-content" wx:for="{{cacheObj.paihang ? cacheObj.paihang[0].data.topList : []}}" wx:for-index="index" wx:key="index" data-key="{{index}}" wx:for-item="item">
+                <view class="list-image-box">
+                    <image src="{{item.picUrl}}" />
+                </view>
+                <view class="list-content-box">
+                    <view class="list-title" >{{item.topTitle}}</view>
+                    <view class="list-box" wx:for="{{item.songList}}" wx:for-index="index" wx:for-item="value" wx:key="index">
+                        <text class="list-index">{{index + 1}} </text>
+                        <text class="list-songname"> {{value.songname}} </text>
+                        <text class="list-singername"> {{value.singername}}</text>
+                    </view>
+                </view>
+                <i></i>
+            </view>
+        </view>
+    </view>
+</template>

@@ -1,0 +1,228 @@
+/**index.wxss**/
+
+/* 导航样式开始 */
+.qq-nav{
+    background: #fff;
+    overflow: hidden;
+}
+.qq-nav button{
+    display: block;
+    width: 250rpx;
+    float: left;
+    font-size: 32rpx;
+    border-radius: 0;
+    background: none;
+}
+.qq-nav button::after{
+    border: 0;
+}
+.qq-nav button.on{
+    color: #31c27c;
+    border-bottom: 2rpx solid #31c27c;
+}
+
+/* tab 的内容区样式开始 */
+.tab-content{
+    padding-top: 20rpx;
+    background: #f4f4f4;
+}
+
+/* banner样式开始 */
+.banner{
+    width: 100%;
+    position: relative;
+    margin-top: -20rpx;
+    overflow: hidden;
+}
+.tuijian-banner{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.bannner-box{
+    width: 500%;
+    position: relative;
+    overflow: hidden;
+}
+.tabimg{
+    width: 20%;
+    float: left;
+}
+.tabimg image{
+    display: block;
+    width: 100%;
+}
+.banner-tab-box{
+    position: absolute;
+    bottom: 12rpx;
+    left: 0;
+    right: 0;
+    padding: 0 12rpx;
+    text-align: center;
+}
+.banner-tab{
+    display: inline-block;
+    margin: 0 8rpx;
+    width: 12rpx;
+    height: 12rpx;
+    border-radius: 6rpx;
+    background: rgba(144,144,144,.8);
+}
+
+.banner-tab.on{
+    background: #fff;
+}
+
+.slide-image{
+    width: 750rpx;
+    height: 300rpx;
+}
+
+/* 推荐列表样式开始 */
+.tuijian-list{
+    padding: 25rpx 20rpx 20rpx 30rpx;
+    font-size:24rpx;
+}
+.tuijian-list-content{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20rpx;
+    background-color: #fff
+}
+.tuijian-list-content .list-image-box{
+    width: 206rpx;
+    float: left;
+}
+.tuijian-list-content .list-image-box image{
+    position: absolute;
+    display: block;
+    width: 206rpx;
+    height: 100%;
+}
+.tuijian-list-content .list-content-box{
+    width: 474rpx;
+    padding-left: 20rpx;
+    overflow: hidden;
+    float:right;
+}
+.tuijian-list-content .list-title{
+    color: #000;
+    font-size:32rpx;
+    height: 42rpx;
+    overflow: hidden;
+}
+.tuijian-list-content .list-name{
+    color: #777;
+}
+.tuijian-list-content .list-num{
+    color: #777;
+}
+
+/* 排行榜列表样式 */
+.paihang-list{
+    padding: 20rpx 20rpx 30rpx;
+    margin-top: -20rpx;
+    background-color: #f4f4f4;
+}
+.paihang-list-content{
+    position: relative;
+    margin-bottom: 20rpx;
+    overflow: hidden;
+    background-color: #fff;
+}
+.paihang-list-content .list-image-box{
+    width: 144rpx;
+    float: left;
+}
+.paihang-list-content .list-image-box image{
+    position: absolute;
+    display: block;
+    width: 144rpx;
+    height: 100%;
+}
+.paihang-list-content .list-content-box{
+    width: 550rpx;
+    padding-left: 20rpx;
+    overflow: hidden;
+    float: right;
+}
+.paihang-list-content .list-title{
+    margin-bottom: 6rpx;
+    color: #000;
+    font-size:32rpx;
+    overflow: hidden;
+}
+.paihang-list-content .list-box{
+    font-size:24rpx;
+}
+.paihang-list-content .list-index, .paihang-list-content .list-singername{
+    color: #777;
+}
+.paihang-list-content i{
+    position: absolute;
+    right: 20rpx;
+    top: 50%;
+    margin-top: -8rpx;
+    width: 12rpx;
+    height: 12rpx;
+    border-right: 2rpx solid #b2b2b2;
+    border-bottom: 2rpx solid #b2b2b2;
+    transform: rotate(-45deg);
+}
+
+/* 搜索页样式 */
+.sousuo-search{
+    background: #f4f4f4;
+    padding: 0rpx 20rpx 20rpx;
+}
+.sousuo-search-box{
+    position: relative;
+    border-radius: 6rpx;
+    background: #fff;
+    height: 40rpx;
+    padding: 16rpx 24rpx 16rpx 70rpx;
+}
+.sousuo-searchbar{
+    height: 40rpx;
+    line-height: 40rpx;
+    width: 100%;
+    color: rgba(0,0,0,.3);
+    border: 0rpx;
+    font-size: 28rpx;
+    min-height: 0px;
+}
+.icon_search{
+    position: absolute;
+    top: 18rpx;
+    left: 20rpx;
+    width: 36rpx;
+    height: 36rpx;
+}
+.sousuo-list{
+    background-color: #fff;
+    padding: 30rpx 30rpx 20rpx;
+}
+.sousuo-list-title{
+    font-size: 28rpx;
+    color: rgba(0,0,0,.6);
+    margin-bottom: 16rpx;
+}
+.sousuo-list-label{
+    display: inline-block;
+    font-size: 28rpx;
+    padding: 0 20rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    color: #000;
+    border: 2rpx solid rgba(0,0,0,.6);
+    border-radius: 198rpx;
+    word-break: keep-all;
+    margin-bottom: 20rpx;
+    margin-right: 28rpx;
+}
+.sousuo-list-label.on{
+    color: #fc4524;
+    border-color: #fc4524;
+}
+
+/* tab 的内容区样式结束 */

@@ -1,0 +1,36 @@
+<template name="tuijian">
+    <view wx:if="{{navclass.tuijian.length}}" class="banner">
+        <!--<view class="tuijian-banner">
+                <view class="bannner-box">
+                    <view class="tabimg" wx:for="{{cacheObj.tuijian ? cacheObj.tuijian[0].data.slider : []}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+                        <image src="{{item.picUrl}}" data-link="{{item.linkUrl}}" mode="widthFix" />
+                    </view>
+                </view>
+                <view class="banner-tab-box">
+                    <view bindtap="clickTab" wx:for="{{cacheObj.tuijian ? cacheObj.tuijian[0].data.slider : []}}" wx:for-index="index" wx:key="index" data-key="{{index}}" class="banner-tab {{clickTabName[index] || ''}}" ></view>
+                </view>
+        </view>-->
+        <swiper indicator-dots="{{ctrollObj.indicatorDots}}" indicator-active-color="{{ctrollObj.backColor}}"
+          indicator-color="{{ctrollObj.indexColor}}"
+          circular="{{ctrollObj.circular}}"
+          autoplay="true" interval="{{ctrollObj.interval}}" duration="{{ctrollObj.duration}}">
+          <block wx:for="{{cacheObj.tuijian ? cacheObj.tuijian[0].data.slider : []}}">
+            <swiper-item>
+              <image src="{{item.picUrl}}" class="slide-image"/>
+            </swiper-item>
+          </block>
+        </swiper>
+        <view class="tuijian-list">
+            <view class="tuijian-list-content" wx:for="{{cacheObj.tuijian ? cacheObj.tuijian[1].data.mvlist : []}}" wx:for-index="index" wx:key="index" data-key="{{index}}" wx:for-item="item">
+                <view class="list-image-box">
+                    <image src="{{item.picurl}}" />
+                </view>
+                <view class="list-content-box">
+                    <view class="list-title">{{item.mvtitle}}</view>
+                    <view class="list-name">{{item.singer_name}}</view>
+                    <view class="list-num">播放量 {{item.listennum}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>

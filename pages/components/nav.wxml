@@ -1,0 +1,7 @@
+<template name="nav">
+    <view class="qq-nav">
+      <button class="{{navclass.tuijian || ''}}" id="tuijian" bindtap="switchtab">推荐</button>
+      <button class="{{navclass.paihang || ''}}" id="paihang" bindtap="switchtab">排行榜</button>
+      <button class="{{navclass.sousuo || ''}}" id="sousuo" bindtap="switchtab">搜索</button>
+    </view>
+</template>
