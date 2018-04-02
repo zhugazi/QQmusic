@@ -6,6 +6,7 @@ const paihangFun = require('../componentsjs/paihang');
 const sousuoFun = require('../componentsjs/sousuo');
 const app = getApp();
 
+// 测试一下试试
 Page({
   data: {
     msg: "测试一下",
